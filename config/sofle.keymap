@@ -124,10 +124,10 @@
 //              |      |       |       |      |      |   |      |      |      |       |      |
             bindings = <
 &trans     &trans       &trans       &trans       &trans       &trans                            &kp INS   &trans          &trans      &trans           &trans        &trans
-&trans     &kp LS(SEMI) &kp LS(SQT)  &kp LS(LBKT) &kp LS(RBKT) &trans                            &kp PG_UP &kp LC(LEFT)    &kp UP      &kp LC(RIGHT)    &kp LC(BSPC)  &trans
-&trans     &kp SEMI     &kp SQT      &kp LBKT     &kp RBKT     &kp BSLH                          &kp PG_DN &kp LEFT        &kp DOWN    &kp RIGHT        &kp DEL       &kp BSPC
-&trans     &kp LC(Y)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans  &trans   &rgb_ug RGB_TOG  &kp CLCK  &kp HOME        &kp PSCRN   &kp END          &trans        &trans
-                        &trans       &trans       &trans       &trans  &trans   &trans           &trans    &trans          &trans      &trans
+&trans     &kp LS(RBKT) &kp LS(LBKT) &kp LS(SQT)  &kp LS(SEMI) &kp LS(BSLH)                      &kp PG_UP &kp LC(LEFT)    &kp UP      &kp LC(RIGHT)    &kp LC(BSPC)  &trans
+&trans     &kp RBKT     &kp LBKT     &kp SQT      &kp SEMI     &kp BSLH                          &kp PG_DN &kp LEFT        &kp DOWN    &kp RIGHT        &kp DEL       &kp BSPC
+&trans     &kp LC(Y)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans       &trans   &rgb_ug RGB_TOG  &kp CLCK  &kp HOME        &kp PSCRN   &kp END          &trans        &trans
+                        &trans       &trans       &trans       &trans       &trans   &trans           &trans    &trans          &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -162,7 +162,7 @@
 &trans     &kp F10      &kp F11      &kp F12      &kp LG(LC(LEFT)) &kp LG(LC(RIGHT))                       &kp LS(N8)    &kp LS(N9)   &kp RA(F)  &kp RA(G)    &kp RA(B)      &kp RA(N)
 &trans     &kp F7       &kp F8       &kp F9       &trans           &trans                                  &kp EQUAL     &kp N7       &kp N8     &kp N9       &kp LS(EQUAL)  &trans
 &trans     &kp F4       &kp F5       &kp F6       &trans           &trans                                  &kp DOT       &kp N4       &kp N5     &kp N6       &kp COMMA      &trans
-&trans     &kp F1       &kp F2       &kp F3       &trans           &trans             &trans   &trans      &kp KP_DIVIDE &kp N1       &kp N2     &kp N3       &kp LS(N7)     &trans
+&trans     &kp F1       &kp F2       &kp F3       &trans           &trans             &trans   &trans      &kp FSLH      &kp N1       &kp N2     &kp N3       &kp LS(N7)     &trans
                         &trans       &trans       &trans           &kp LSHFT          &trans   &trans      &kp N0        &trans       &trans     &trans
             >;
 
