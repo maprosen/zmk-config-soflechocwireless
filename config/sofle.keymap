@@ -137,15 +137,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                 |      |      |       |      |       |       |
 // |     |      |      |       |       |      |                 |      |      |       |      |       |       |
-// |     |      |      |RGB_HI |RGB_SI |RGB_CF|                 |BR-UP |MY_COM|       |      |       |       |
-// |     |      |      |RGB_HD |RGB_SD |RGB_CR|      |   | RGB  |BR-DOW| CALC |       |      |       |       |
+// |     |RGB_BI|RGB_SI|RGB_HI |RGB_SAI|RGB_CF|                 |BR-UP |MY_COM|       |      |       |       |
+// |     |RGB_BD|RGB_SD|RGB_HD |RGB_SAD|RGB_CR|      |   | RGB  |BR-DOW| CALC |       |      |       |       |
 //              |      |       |       |      |      |   |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &trans       &trans       &trans   &trans    &trans  &trans
-&trans     &trans       &trans       &trans       &trans       &trans                                   &trans       &trans       &trans   &trans    &trans  &trans
-&trans     &trans       &trans       &kp RGB_HUI  &kp RGB_SAI  &kp RGB_EFF                              &kp C_BRI_UP &kp LG(E)    &trans   &trans    &trans  &trans
-&trans     &trans       &trans       &kp RGB_HUD  &kp RGB_SAD  &kp RGB_EFR    &trans   &rgb_ug RGB_TOG  &kp C_BRI_DN &kp K_CALC   &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans         &trans   &trans           &trans       &trans       &trans   &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                 &trans       &trans       &trans   &trans    &trans  &trans
+&trans     &trans           &trans          &trans           &trans           &trans                                       &trans       &trans       &trans   &trans    &trans  &trans
+&trans     &rgb_ug RGB_BRI  &rgb_ug RGB_SPI &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                              &kp C_BRI_UP &kp LG(E)    &trans   &trans    &trans  &trans
+&trans     &rgb_ug RGB_BRD  &rgb_ug RGB_SPD &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR    &trans   &rgb_ug RGB_TOG  &kp C_BRI_DN &kp K_CALC   &trans   &trans    &trans  &trans
+                            &trans          &trans           &trans           &trans             &trans   &trans           &trans       &trans       &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
