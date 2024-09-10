@@ -137,18 +137,18 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                 |      |      |       |      |       |       |
 // |     |      |      |       |       |      |                 |      |      |       |      |       |       |
-// |     |      |      |       |       |      |                 | BR-UP|MY_COM|       |      |       |       |
-// |     |      |      |       |       |      |      |   | RGB  |BR-DOW| CALC |       |      |       |       |
+// |     |      |      |RGB_HI |RGB_SI |RGB_CF|                 |BR-UP |MY_COM|       |      |       |       |
+// |     |      |      |RGB_HD |RGB_SD |RGB_CR|      |   | RGB  |BR-DOW| CALC |       |      |       |       |
 //              |      |       |       |      |      |   |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &trans       &trans       &trans   &trans    &trans  &trans
 &trans     &trans       &trans       &trans       &trans       &trans                                   &trans       &trans       &trans   &trans    &trans  &trans
-&trans     &trans       &trans       &trans       &trans       &trans                                   &kp C_BRI_UP &kp LG(E)    &trans   &trans    &trans  &trans
-&trans     &trans       &trans       &trans       &trans       &trans         &trans   &rgb_ug RGB_TOG  &kp C_BRI_DN &kp K_CALC   &trans   &trans    &trans  &trans
+&trans     &trans       &trans       &kc RGB_HUI  &kc RGB_SAI  &kc RGB_EFF                              &kp C_BRI_UP &kp LG(E)    &trans   &trans    &trans  &trans
+&trans     &trans       &trans       &kc RGB_HUD  &kc RGB_SAD  &kc RGB_EFR    &trans   &rgb_ug RGB_TOG  &kp C_BRI_DN &kp K_CALC   &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans         &trans   &trans           &trans       &trans       &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp RGB_BRI RGB_BRD &inc_dec_kp RGB_SPI RGB_SPD>;
         };
     };
 };
