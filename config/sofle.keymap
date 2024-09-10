@@ -105,11 +105,11 @@
 // | SHIFT |  '  |  +  |  ?   |  *   |  {   |        |  |       |  }   |  [    |  ]    |  <   |   >   | SHIFT |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&kp F12   &kp F1    &kp F2      &kp F3      &kp F4           &kp F5                    &kp F6    &kp F7    &kp F8          &kp F9    &kp F10   &kp F11
-&kp GRAVE &kp N1    &kp N2      &kp N3      &kp N4           &kp N5                    &kp N6    &kp N7    &kp N8          &kp N9    &kp N0    &kp BSPC
-&kp TAB   &kp EXCL  &kp DQT     &kp HASH    &kp DLLR         &kp PRCNT                 &kp AMPS  &kp SLASH &kp LPAR        &kp RPAR  &kp EQUAL &kp AT
-&kp LSHFT &kp SQT   &kp KP_PLUS &kp QMARK   &kp KP_MULTIPLY  &kp LBRC  &trans   &trans &kp RBRC  &kp LBKT  &kp RBKT        &kp LT    &kp GT    &kp RSHFT
-                    &trans      &trans      &trans           &trans    &trans   &trans &trans    &trans    &trans          &trans
+&kp F12   &kp F1      &kp F2      &kp F3          &kp F4           &kp F5                     &kp F6      &kp F7     &kp F8          &kp F9        &kp F10     &kp F11
+&kp GRAVE &kp N1      &kp N2      &kp N3          &kp N4           &kp N5                     &kp N6      &kp N7     &kp N8          &kp N9        &kp N0      &kp BSPC
+&kp TAB   &kp LS(N1)  &kp LS(N2)  &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                 &kp LS(N6)  &kp LS(N7) &kp LS(N8)      &kp LS(N9)    &kp LS(N0)  &kp LA(V)
+&kp LSHFT &kp UNDER   &kp EQUAL   &kp LS(UNDER)   &kp LS(EQUAL)    &kp LA(B)  &trans   &trans &kp LA(N)   &kp LA(F)  &kp LA(G)       &kp LA(COMMA) &kp LA(DOT) &kp RSHFT
+                      &trans      &trans          &trans           &trans     &trans   &trans &trans      &trans     &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
