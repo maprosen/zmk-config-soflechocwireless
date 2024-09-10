@@ -148,7 +148,7 @@
                         &trans       &trans       &trans       &trans         &trans   &trans           &trans       &trans       &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RGB_BRI RGB_BRD &inc_dec_kp RGB_SPI RGB_SPD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         tri_layer {
